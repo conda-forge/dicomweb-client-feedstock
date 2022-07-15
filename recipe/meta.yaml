@@ -13,7 +13,7 @@ build:
   entry_points:
     - dicomweb_client = dicomweb_client.cli:_main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   skip: True  # [py2k]
 
 requirements:
