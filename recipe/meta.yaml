@@ -1,5 +1,5 @@
 {% set name = "dicomweb-client" %}
-{% set version = "0.59.0" %}
+{% set version = "0.59.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dicomweb-client-{{ version }}.tar.gz
-  sha256: 1ec7703cf554558a9d709deb7698b805efb28c7eed8dea94925881ae689d600b
+  sha256: 4c166b5c989b28092f6486b8a1b01e2fd9d4abde2522cc8f8855ad27077d0c8a
 
 build:
   entry_points:
