@@ -14,7 +14,6 @@ build:
     - dicomweb_client = dicomweb_client.cli:_main
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  skip: true  # [py2k]
 
 requirements:
   host:
