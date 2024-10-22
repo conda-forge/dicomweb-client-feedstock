@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dicomweb-client-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dicomweb_client-{{ version }}.tar.gz
   sha256: b06a43892f21e278c07e42e644ae7f11a1681788f11e77ef691ed404041a93cb
 
 build:
