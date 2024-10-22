@@ -10,11 +10,11 @@ source:
   sha256: b06a43892f21e278c07e42e644ae7f11a1681788f11e77ef691ed404041a93cb
 
 build:
-  script: |
-    conda config --set solver classic
   entry_points:
     - dicomweb_client = dicomweb_client.cli:_main
-  script: {{ PYTHON }} -m pip install . -vv
+  script: |
+    conda config --set solver classic 
+    {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
