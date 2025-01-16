@@ -10,11 +10,11 @@ source:
   sha256: dd11604c99711d3fc9d223de960a1b64db3b2dcbc30592473d935e27b9243d46
 
 build:
+  noarch: python
   entry_points:
     - dicomweb_client = dicomweb_client.cli:_main
   script: {{ PYTHON }} -m pip install . -vv
   number: 1
-  skip: true  # [py2k]
 
 requirements:
   host:
