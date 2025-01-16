@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: dd11604c99711d3fc9d223de960a1b64db3b2dcbc30592473d935e27b9243d46
 
 build:
@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<4
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6,<4
+    - python >={{ python_min }}
     - numpy >=1.19
     - pillow >=8.3
     - pydicom >=2.2
@@ -37,6 +37,7 @@ test:
     - pip check
     - dicomweb_client --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
