@@ -1,5 +1,5 @@
 {% set name = "dicomweb-client" %}
-{% set version = "0.59.3" %}
+{% set version = "0.60.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: dd11604c99711d3fc9d223de960a1b64db3b2dcbc30592473d935e27b9243d46
+  sha256: fd2db1ab8e9fe976752b44e1f9223000db3626c5cae7194b2e9b4177e48d2630
 
 build:
   noarch: python
   entry_points:
     - dicomweb_client = dicomweb_client.cli:_main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
