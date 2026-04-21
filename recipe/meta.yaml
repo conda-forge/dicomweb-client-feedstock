@@ -1,6 +1,6 @@
 {% set name = "dicomweb-client" %}
 {% set version = "0.61.0" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
